@@ -18,7 +18,7 @@ app.use(cors({
 
 app.use(cookieParser()); //  Middleware that enable working with cookies
 
-app.listen(8080, () => console.log("Our server is listening on port 8080... ")); // Now we're live!
+app.listen(process.env.PORT || 8080, () => console.log("Our server is listening....")); // Now we're live!
 
 // connecting to MongoDB
 const mongoURL =
