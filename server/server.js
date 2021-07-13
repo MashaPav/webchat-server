@@ -59,8 +59,6 @@ app.get("/api/messages", Messages.getAll);
 
 app.get("/api/messages/:id", Messages.getById);
 
-//app.post("/api/messages", Messages.createNew);
-
 app.put("/api/messages/:id", Messages.update);
 
 app.delete("/api/messages/:id", Messages.delete);
